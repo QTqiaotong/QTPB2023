@@ -96,3 +96,7 @@ jspm_packages/
 # TernJS port file
 .tern-port
 dist/
+
+# Local photos and uploads
+public/images/cities/
+uploads/
