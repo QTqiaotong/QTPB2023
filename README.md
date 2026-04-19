@@ -10,27 +10,27 @@ It started as a personal gift, so the product shape is intentionally intimate: a
 
 ## Preview
 
-<table>
+<table cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: 0;">
   <tr>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-13.jpg" alt="Star map and Energy Station preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-13.jpg" alt="Star map and Energy Station preview" width="100%" style="display: block;" />
     </td>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-14.jpg" alt="Admin city upload and city detail preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-14.jpg" alt="Admin city upload and city detail preview" width="100%" style="display: block;" />
     </td>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-15.jpg" alt="FIRSTS timeline and mobile landing preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-15.jpg" alt="FIRSTS timeline and mobile landing preview" width="100%" style="display: block;" />
     </td>
   </tr>
   <tr>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-14.jpg" alt="Admin city upload and city detail preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-14.jpg" alt="Admin city upload and city detail preview" width="100%" style="display: block;" />
     </td>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-15.jpg" alt="FIRSTS timeline and mobile landing preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-15.jpg" alt="FIRSTS timeline and mobile landing preview" width="100%" style="display: block;" />
     </td>
-    <td width="33%" align="center">
-      <img src="./docs/images/frame-16.jpg" alt="Earth view and star map preview" width="100%" />
+    <td width="33%" style="padding: 0; border: 0;">
+      <img src="./docs/images/frame-16.jpg" alt="Earth view and star map preview" width="100%" style="display: block;" />
     </td>
   </tr>
 </table>
