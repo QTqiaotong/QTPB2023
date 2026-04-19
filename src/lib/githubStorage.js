@@ -50,7 +50,7 @@ function generateFileName(originalName) {
 export async function uploadImage(file, subDir = '') {
     const token = getToken();
     if (!token || !GITHUB_OWNER || !GITHUB_REPO) {
-        throw new Error('GitHub 存储未配置。请确认已通过邀请码验证。');
+        throw new Error('GitHub 存储未配置。请确认 GitHub Token 已正确设置。');
     }
 
     const fileName = generateFileName(file.name || 'photo.jpg');

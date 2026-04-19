@@ -15,7 +15,6 @@ import HeroSection from './components/HeroSection';
 import LettersModule from './components/letters/LettersModule';
 import LettersIcon from './components/letters/LettersIcon';
 import MusicPlayer from './components/MusicPlayer';
-import InviteGate from './components/InviteGate';
 
 export default function App() {
   const [page, setPage] = useState('home');
@@ -92,8 +91,7 @@ export default function App() {
   }, [handleSetTab]);
 
   return (
-    <InviteGate>
-      <EnergyProvider>
+    <EnergyProvider>
         <div style={{ width: '100%', height: '100%', margin: 0, padding: 0 }}>
           {/* Mobile Notice Modal */}
           {showMobileNotice && isMobile && (
@@ -252,6 +250,5 @@ export default function App() {
           <MusicPlayer />
         </div>
       </EnergyProvider>
-    </InviteGate>
   );
 }
