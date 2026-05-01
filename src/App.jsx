@@ -20,7 +20,7 @@ export default function App() {
   const [page, setPage] = useState('home');
   const [selectedCity, setSelectedCity] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  const [activeTab, setActiveTab] = useState(window.innerWidth < 768 ? 'towhere' : 'keywords');
+ const [activeTab, setActiveTab] = useState('towhere');
   const [showMobileNotice, setShowMobileNotice] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export default function App() {
     // 2. Handle Hash for tabs
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (['keywords', 'towhere', 'breaking', 'letters'].includes(hash)) {
+      if (['towhere', 'breaking', 'letters', 'prehistory'].includes(hash)) {
         // Prevent keyboards on mobile
         if (isMobile && hash === 'keywords') {
           setTabWithHash('towhere');
@@ -206,28 +206,9 @@ export default function App() {
               )}
 
               <div className="page-content">
-                {activeTab === 'keywords' && !isMobile && (
-                  <div style={{
-                    position: 'relative',
-                    width: '100%',
-                    height: '100vh',
-                    overflow: 'hidden',
-                    backgroundImage: `url(${import.meta.env.BASE_URL}images/Background.jpg)`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
-                  }}>
-                    {/* KeywordsParticle handles its own layering: Canvas at lowest, UI at highest */}
-                    <KeywordsParticle />
-
-                    {/* Middle layer: Interactive planets */}
-                    <div style={{ position: 'absolute', inset: 0, zIndex: 10 }}>
-                      <HeroSection goTo={goTo} />
-                    </div>
-                  </div>
-                )}
                 {activeTab === 'towhere' && <PinkAnimationHome goTo={goTo} goToCity={goToCity} isCityMode={page === 'city'} isMobile={isMobile} />}
                 {activeTab === 'breaking' && <FirstsTimeline />}
+                {activeTab === 'prehistory' && <div style={{color:'white',padding:'100px 60px',fontSize:'24px'}}>Prehistory — Coming Soon</div>}
                 {activeTab === 'letters' && !isMobile && <LettersModule />}
               </div>
               {activeTab === 'keywords' && !isMobile && (
