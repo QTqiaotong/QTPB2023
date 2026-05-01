@@ -1,14 +1,14 @@
 import React from 'react';
-import '../style.css'; // Ensure we can style it
+import '../style.css';
 
 const Navbar = ({ activeTab, setTab, isMobile }) => {
     const allTabs = [
-        { id: 'keywords', label: '新年关键词' },
-        { id: 'towhere', label: '一路向哪' },
-        { id: 'breaking', label: '初时' },
+        { id: 'towhere', label: 'Paths We Share' },
+        { id: 'breaking', label: 'Milestones' },
+        { id: 'prehistory', label: 'Prehistory' },
     ];
 
-    const tabs = isMobile ? allTabs.filter(t => ['towhere', 'breaking'].includes(t.id)) : allTabs;
+    const tabs = isMobile ? allTabs.filter(t => ['towhere', 'breaking', 'prehistory'].includes(t.id)) : allTabs;
 
     return (
         <nav className="fixed-navbar">
